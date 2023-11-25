@@ -37,7 +37,6 @@ tem-preset, /run/systemd/system-preset, /usr/local/lib/systemd/system-preset]
 
 - rule: Account Manipulation in SSH
   desc: an attempt to do account manipulation using ssh
-
   condition: >
     ((open_read and (fd.name in (ssh_files)))
     or (open_write and (fd.name in (ssh_files))))
